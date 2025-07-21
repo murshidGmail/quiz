@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+
+    <title>English language test</title>
+    <style>
+      * {
+      }
+      body {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+        margin: 0;
+      }
+      .content {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        flex-direction: column;
+      }
+
+      #grade,
+      #theme {
+        flex: 1;
+        text-align: center;
+        background-color: rgb(148, 231, 196);
+        height: 5vh;
+        width: 50vw;
+        margin-top: 5px;
+        margin: 10px auto;
+        display: block;
+      }
+      h3 {
+        flex: 1;
+        text-align: center;
+        background-color: rgb(238, 193, 125);
+        height: 7vh;
+        margin: 10px;
+        display: block;
+        margin: 0 auto;
+      }
+
+      #start {
+        flex: 1;
+        width: 100vw;
+        height: 20vh;
+      }
+    </style>
+
+<script defer src="https://umami.murshidalkindi.dev/script.js" data-website-id="f202103b-dd83-4c2a-b458-6a380285d0e1"></script>
+
+  </head>
+  <body>
+    <div class="content alert alert-info">
+      <div class="" role="alert">
+        <h1>Welcome to Omani English Language Curriculum Tests</h1>
+        <!--<h3>Select Grade:</h3> 
+<select id="grade" name="grade" class="selectpicker" >
+  <option>G12</option>
+</select> <br>-->
+        <h3>Select Level:</h3>
+        <select id="theme" name="theme" class="selectpicker">
+          <option value="level1">level 1 adj + noun</option>
+          <option value="level2">level 2 (2 adjectives + noun)</option>
+          <option value="level3">level 3 present simple</option>
+          <option value="level4">level 4 past simple</option>
+          <option value="level5">
+            level 5 mex present and past advanced sentences
+          </option>
+          <option value="level6">level 6 when + because + so</option>
+          <option value="level7">
+            level 7 past simple + past continuous ( when+while)
+          </option>
+          <!-- <option value="">----------</option>
+  <option value="Th2L1">Theme 2 level 1</option>
+  <option value="Th2L2">Theme 2 level 2</option>
+  <option value="Th2L3">Theme 2 level 3</option>
+  <option value="Th2L4">Theme 2 level 4</option>
+  <option value="Th2L5">Theme 2 level 5</option>
+  <option value="Th2L6">Theme 2 level 6</option>
+  <option value="Th2L7">Theme 2 level 7</option>
+  <option value="Th2L8">Theme 2 level 8</option>
+  <option value="Th2L9">Theme 2 level 9</option>
+  <option value="Th2L10">Theme 2 level 10</option>--></select
+        ><br /><br />
+        <button id="start" type="button" class="btn btn-primary">Start</button>
+      </div>
+
+      <div class="alert alert-info" role="alert">
+        <a href="http://murshidalkindi.com/profile">Murshid AlKindi 2022</a>
+      </div>
+          </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).ready(function () {
+        $("#start").on("click", function (event) {
+          var selectedGrade = $("#grade").children("option:selected").val();
+          var selectedLevel = $("#theme").children("option:selected").val();
+          window.location.href = "shuffle.html?level=" + selectedLevel;
+        });
+      });
+    </script>
+  </body>
+</html>
