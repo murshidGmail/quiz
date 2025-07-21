@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h2 {
+        margin-bottom: 10px;
+      }
+
+      .inputs-container {
+        display: flex;
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+      }
+
+      input {
+        box-sizing: border-box;
+        width: calc(
+          10% - 10px
+        ); /* Set the width for each input, considering margin */
+        margin-right: 10px; /* Space between inputs */
+        margin-bottom: 10px; /* Space between rows */
+      }
+
+      @media (max-width: 600px) {
+        .inputs-container {
+          flex-direction: column; /* Stack items vertically on smaller screens */
+        }
+
+        input {
+          width: 100%; /* Take up full width on smaller screens */
+          margin-right: 0;
+        }
+      }
+    </style>
+    <title>Responsive Layout</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="inputs-container">
+        <h2>Title</h2>
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+        <input type="text" placeholder="Input 2" maxlength="1" />
+      </div>
+    </div>
+  </body>
+</html>
