@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Quick Quiz - Play</title>
+    <link rel="stylesheet" href="app.css" />
+    <link rel="stylesheet" href="game.css" />
+    <style>
+      .center {
+        display: flex;
+        justify-content: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container center">
+      <div id="loader"></div>
+      <div id="game" class="justify-center flex-column hidden">
+        <div id="hud">
+          <div id="hud-item">
+            <p id="progressText" class="hud-prefix">Question</p>
+            <div id="progressBar">
+              <div id="progressBarFull"></div>
+            </div>
+          </div>
+        </div>
+        <div id="questionContainer" class="center"></div>
+        <div id="correctAnswerContainer" class="center"></div>
+        <div class="center">
+          <button id="nextBTN" onclick="nextWord()" class="btn btn-primary">
+            Next
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="gameLearn.js"></script>
+  </body>
+</html>
