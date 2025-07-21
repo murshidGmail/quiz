@@ -67,5 +67,5 @@ fetch(final_url)
 
 function quizPage(sheetValue, quizPageName) {
   //console.log(sheetValue);
-  window.location.href = `${quizPageName}/index.html`;
+  window.location.assign(`${quizPageName}/`);
 }
